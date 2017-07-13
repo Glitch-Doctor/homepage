@@ -1,0 +1,158 @@
+﻿/* site.css */
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main_txt {
+    margin: 52px 0 40px 0;
+}
+
+.img-left {
+    float: left;
+    text-align: center;
+}
+
+.navbar-fixed-bottom .navbar-inner {
+    padding: 0;
+    height: 40px;
+    min-height: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+    height: 50px;
+    min-height: 50px;
+}
+
+#logoff {
+    padding-right: 10px;
+}
+
+.navbar-fixed-bottom {
+    padding: 0;
+    height: 40px;
+    min-height: 40px;
+}
+
+#title {
+    padding-left: 7px;
+    line-height: 50px;
+}
+
+#footer h5 {
+    color: white;
+}
+
+.displaypic {
+    height: 50px;
+    border-right: 0.25px solid #3d3d3d;
+}
+
+#username {
+    padding-left: 7px;
+}
+
+.navbar {
+    margin: 0 0 0 200px;
+    transition: margin-left ease .25s;
+    border-bottom: 0.25px solid #3d3d3d;
+}
+
+    .navbar.hide-sidebar {
+        margin-left: 0;
+        transition: margin-left ease .25s;
+    }
+
+#theUser {
+    background-color: #727272;
+    border-bottom: 0.25px solid #3d3d3d;
+}
+
+#MainLogo {
+    height: 40px;
+    padding-top: 10px;
+    position: page;
+    line-height: 50px;
+
+}
+
+#logout {
+    position: fixed;
+    bottom: 0;
+}
+
+.menu {
+    font-size: 12px;
+}
+
+    .menu li {
+        list-style-type: none;
+    }
+
+        .menu .active {
+            font-weight: bold;
+        }
+
+#sidebar {
+    background: #2a2c36;
+    color: #eee;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
+    border: 0.5px solid #3d3d3d;
+    transition: left ease .25s;
+}
+
+    #sidebar.hide-sidebar {
+        left: -200px;
+        transition: left ease .25s;
+    }
+
+#wrapper {
+    margin: 0 0 0 200px;
+    transition: margin-left ease .25s;
+}
+
+    #wrapper.hide-sidebar {
+        margin-left: 0;
+        transition: margin-left ease .25s;
+    }
+
+    #wrapper a.navbar-brand {
+        margin-left: 1px;
+    }
+
+#menuCollapse {
+    margin: 0;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    /*.img-right {
+        display: none !important;
+    }*/
+
+    
+    /*.displaypic {
+        height: 58px;
+    }*/
+}
