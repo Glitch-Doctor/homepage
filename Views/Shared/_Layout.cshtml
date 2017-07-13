@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>The World - @ViewBag.Title</title>
+    <meta charset="utf-8" />
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootswatch/slate/bootstrap.min.css" rel="stylesheet" /> @* <!-- This is where to change Bootswatch theme! --> *@
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+
+<body>
+    <div id="sidebar">
+        @*@if (User.Identity.IsAuthenticated)
+        {*@
+            <div id="theUser">
+                <img src="~/img/ReaperDP.jfif" alt="Display picture" class="displaypic" />
+                <span id="username">@User.Identity.Name</span>
+            </div>
+        @*}*@
+        <ul class="nav">
+            <li><a asp-controller="App" asp-action="Index">Home</a></li>
+            <li><a asp-controller="App" asp-action="MainAccounts">Glitch_Doctor</a></li>
+            @*@if (User.Identity.IsAuthenticated)
+            {*@
+                <li><a asp-controller="App" asp-action="Poll">Polls</a></li>
+            @*}*@
+            <li><a asp-controller="App" asp-action="About">About</a></li>
+            <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+        </ul>
+        @*@if (User.Identity.IsAuthenticated)
+        {*@
+            <ul class="nav navbar-fixed-bottom">
+                <li><a asp-controller="Auth" asp-action="Logout"><i class="fa fa-power-off" id="logoff"></i> Logoff</a></li>
+            </ul>
+        @*}*@
+    </div>
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+                <div>
+                    <a style="float: left;" id="sidebarToggle">
+                        <i class="fa fa-angle-double-left"></i><span id="title">Hide Menu</span>
+                    </a>
+                </div>
+
+
+                @*  -- Perhaps use buttons to the right for active notifications like a new live poll*@
+                    
+                    <div class="img-right">
+                    @*<ul class="nav navbar-nav navbar-right navbar-custom">
+                        <li>*@
+                            <a  asp-controller="App" asp-action="Index">
+                                <img style="float: right;" src="~/img/v1-LogoFinal.png" alt="Glitch_Doctor Logo" id="MainLogo" />
+                            </a>
+                        @*</li>
+                    </ul>*@
+                </div>
+
+            </div>
+        </nav>
+
+        <div id="main" class="container-fluid">
+
+            <div id="main_txt">
+                @RenderBody()
+            </div>
+
+        </div>
+
+        <div id="footer" class="container-fluid">
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <h5 class="text-center">&copy; 2017 Glitch Doctor Ltd.</h5>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="~/js/site.js"></script>
+
+    @RenderSection("scripts", false)
+
+</body>
+</html>

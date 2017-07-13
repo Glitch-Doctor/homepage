@@ -1,0 +1,67 @@
+﻿@model Glitchdoctor.ViewModels.ContactViewModel
+@{
+    ViewBag.Title = "Contact";
+}
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+<div class="row">
+
+    <div class="col-xs-12 col-md-7">
+        <h2>Contact us</h2>
+
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-muted"></div>
+
+            @if (ViewBag.UserMessage != null)
+            {
+                <div>@ViewBag.UserMessage</div><br />
+
+            }
+
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-muted"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input type="email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-muted"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Message"></label>
+                <textarea cols="40" rows="4" asp-for="Message" class="form-control"></textarea>
+                <span asp-validation-for="Message" class="text-muted"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-xs-12 col-md-5">
+        <h3>Or if you wish to contact me directly:-</h3>
+        <p>
+            Email: <email>blah.blah@blah</email><br />
+            <br />
+            Telephone:   00000000000<br />
+            Overseas: +440000000000<br />
+            <br />
+            <br />
+            Address:<br />
+            Near<br />
+            Far<br />
+            Wherever<br />
+            UR1 11B
+        </p>
+    </div>
+    <br />
+
+</div>

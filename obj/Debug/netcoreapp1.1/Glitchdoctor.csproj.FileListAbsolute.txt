@@ -1,0 +1,9 @@
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\bin\Debug\netcoreapp1.1\Glitchdoctor.deps.json
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\bin\Debug\netcoreapp1.1\Glitchdoctor.runtimeconfig.json
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\bin\Debug\netcoreapp1.1\Glitchdoctor.runtimeconfig.dev.json
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\bin\Debug\netcoreapp1.1\Glitchdoctor.dll
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\obj\Debug\netcoreapp1.1\Glitchdoctor.csprojResolveAssemblyReference.cache
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\obj\Debug\netcoreapp1.1\Glitchdoctor.AssemblyInfo.cs
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\bin\Debug\netcoreapp1.1\Glitchdoctor.pdb
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\obj\Debug\netcoreapp1.1\Glitchdoctor.dll
+c:\users\rtompsett\documents\visual studio 2017\Projects\Glitchdoctor\Glitchdoctor\obj\Debug\netcoreapp1.1\Glitchdoctor.pdb
