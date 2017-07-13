@@ -1,0 +1,18 @@
+﻿{
+  "MailSettings": {
+    "ToAddress":  "richard.tompsett@outlook.com" // "admin@glitchdoctor.co.uk" Domain name available so make haste
+  },
+  "ConnectionStrings": {
+    "GlitchContextConnection": "Server=(localdb)\\MSSQLLocalDB;Database=GlitchDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  },
+  "Keys": {
+    "BingKey": "DONTEVERPUTKEYSINSOURCECONTROL",
+    "GoogleApi": "DONTEVERPUTKEYSINSOURCECONTROL"
+    /* This has been done so that it doesn't get used by other unauthoried developers in source control. 
+       Instead we set it as a local environment variable in windows and use that to override 
+       we can always ask the authorised user to push the changes to live with the keys stored on their machine.
+    */
+  }
+
+
+}
